@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Epicodus Cinema 4</h1>
+      <form id="form">
+        <div class="form-group">
+          <label for="movie-name">Select a movie:</label>
+          <select class="form-control" id="movie">
+            <option value="1">Star Trek (Premiere)</option>
+            <option value="2">The Neverending Story (Rerun)</option>
+            <option value="3">Edward Scissorhands</option>
+            <option value="4">How to Program: A Documentary</option>
+          </select>
+        </div>
+        <label for="movie-time">Select Show Time:</label>
+        <select class="form-control" id="movie-time">
+          <option value="1">10 am</option>
+          <option value="2">1 pm</option>
+          <option value="3">7 pm</option>
+          <option value="4">10 pm</option>
+        </select>
+        <label for="ticket-type">Select Ticket Type (base price):</label>
+        <select class="form-control" id="ticket-type">
+          <option value="5">Kids or Senior($5)</option>
+          <option value="10">Adult ($10)</option>
+          <option value="8">Student ($8)</option>
+        </select>
+      <button type="submit" class="btn">Add Ticket to Cart</button>
+      </form>
+    </div>
+  </body>
+</html>

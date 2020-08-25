@@ -1,0 +1,23 @@
+#movie {
+  width:300px;
+}
+#movie-time {
+  width: 200px;
+}
+.btn {
+  margin-top: 20px;
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+body {
+  background-color: rgb(209, 0, 0);
+}
+.container {
+  padding: 20px;
+  padding-bottom: 500px;
+  background-color: white;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+}
