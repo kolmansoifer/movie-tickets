@@ -15,10 +15,27 @@ Ticket.prototype.calcCost = function () {
     }
     else {
       ticketCost += 3;
-      console.log("Correct if statement reached");
     }
     if (this.time === "3" || this.time === "4") {
       ticketCost += 2;
     }
   return ticketCost;
 }
+
+$(document).ready(function() {
+  $("#form").submit(function(event) {
+    event.preventDefault();
+
+    const movieName = $("#movie").val();
+    const showTime = $("#movie-time").val();
+    const ticketType = $("#ticket-type").val();
+
+    let myTicket = new Ticket(movieName, showTime, ticketType);
+    let cost = myTicket.calcCost();
+
+    console.log(cost);
+
+    $("#result").text(cost);
+    $("h3").show();
+  })
+})
